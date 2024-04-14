@@ -177,4 +177,15 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
       return ex.getMessage();
     }
   }
+
+
+
+private String getErrorMessageV2(WebClientResponseException ex) {
+    try {
+      return mapper.readValue(ex.getResponseBodyAsString(), HttpErrorInfo.class).getMessage();
+    } catch (IOException ioex) {
+      return ex.getMessage();
+    }
+  }
+
 }
