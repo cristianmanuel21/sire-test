@@ -26,4 +26,8 @@ public class ProductCompositeService {
 
   private ProductAggregate createProductAggregate(Product product, List<Recommendation> recommendations, List<Review> reviews, String serviceAddress);
 
+private Flux<ProductAggregate> getAll();
+
+private Flux<ProductAggregate> saveAll();
+
 }
