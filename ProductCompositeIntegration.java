@@ -41,6 +41,8 @@ public class ProductCompositeIntegration implements ProductService, Recommendati
   private static final String RECOMMENDATION_SERVICE_URL = "http://recommendation";
   private static final String REVIEW_SERVICE_URL = "http://review";
 
+  private static final String FINAL_VERSION_URL = "2024-005";
+
   private final Scheduler publishEventScheduler;
   private final WebClient webClient;
   private final ObjectMapper mapper;
